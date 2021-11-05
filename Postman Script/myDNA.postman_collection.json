@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "10041912-25ee-4788-9e3e-71edb15f1bd2",
+		"name": "myDNA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "encode",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"url\":\"https%3a%2f%2fcodesubmit.io%2flibrary%2freact\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/encode",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"encode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "decode",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/decode?url=http://short.est/01eee",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"decode"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "http://short.est/01eee"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
